@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { connect, connection } = require('mongoose');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, Events, GatewayIntentBits} = require('discord.js');
 const { token, database } = require('./config.json');
 
 
