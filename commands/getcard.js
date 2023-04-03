@@ -69,7 +69,7 @@ const randomCreature = finalCreaturePool[Math.floor(Math.random() * finalCreatur
           } else if (randomCreature.rarity > 74) {
             goldToAdd = 100;
           } else {
-            goldToAdd = 50;
+            goldToAdd = 50; 
           }
 
           userProfile.gold += goldToAdd;
