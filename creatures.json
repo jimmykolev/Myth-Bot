@@ -1,0 +1,224 @@
+{
+  "mythology": [
+    {
+      "name": "Zeus",
+      "description": "King of the gods, father of all",
+      "attack": 95,
+      "defence": 85,
+      "speed": 75,
+      "range": 90,
+      "abilitypoints": 100,
+      "rarity": 100,
+      "colorhex": "#FFFF00"
+    },
+    {
+      "name": "Athena",
+      "description": "Goddess of wisdom.",
+      "attack": 80,
+      "defence": 90,
+      "speed": 70,
+      "range": 75,
+      "abilitypoints": 85,
+      "rarity": 95,
+      "colorhex": "#b402cc"
+    },
+    {
+      "name": "Ares",
+      "description": "The true God of War.",
+      "attack": 95,
+      "defence": 70,
+      "speed": 80,
+      "range": 60,
+      "abilitypoints": 80,
+      "rarity": 90,
+      "colorhex": "#ad0c12"
+    },
+    {
+      "name": "Poseidon",
+      "attack": 85,
+      "description": "God of the sea.",
+      "defence": 80,
+      "speed": 70,
+      "range": 90,
+      "abilitypoints": 85,
+      "rarity": 90,
+      "colorhex": "#0099ff"
+    },
+    {
+      "name": "Hades",
+      "description": "Ruler of the Underworld.",
+      "attack": 80,
+      "defence": 85,
+      "speed": 65,
+      "range": 80,
+      "abilitypoints": 90,
+      "rarity": 90,
+      "colorhex": "#000000"
+    },
+    {
+      "name": "Medusa",
+      "description": "Gorgon with snakes for hair.",
+      "attack": 75,
+      "defence": 70,
+      "speed": 60,
+      "range": 40,
+      "abilitypoints": 80,
+      "rarity": 85,
+      "colorhex": "#00ad00"
+    },
+    {
+      "name": "Minotaur",
+      "description": "The man with the bull's head.",
+      "attack": 85,
+      "defence": 70,
+      "speed": 65,
+      "range": 30,
+      "abilitypoints": 50,
+      "rarity": 80,
+      "colorhex": "#782600"
+    },
+    {
+      "name": "Centaur",
+      "description": "Half man half horse, rapid and strong.",
+      "attack": 70,
+      "defence": 60,
+      "speed": 90,
+      "range": 80,
+      "abilitypoints": 55,
+      "rarity": 75,
+      "colorhex": "#ff6600"
+    },
+    {
+      "name": "Chimera",
+      "description": "A fire breathing monster.",
+      "attack": 80,
+      "defence": 70,
+      "speed": 75,
+      "range": 60,
+      "abilitypoints": 60,
+      "rarity": 70,
+      "colorhex": "#ff0000"
+    },
+    {
+      "name": "Cyclops",
+      "description": "A one eyed giant.",
+      "attack": 80,
+      "defence": 60,
+      "speed": 70,
+      "range": 30,
+      "abilitypoints": 60,
+      "rarity": 65,
+      "colorhex": "#ff0000"
+    },
+    {
+      "name": "Odin",
+      "description": "The Allfather, King of Asgard.",
+      "attack": 95,
+      "defence": 85,
+      "speed": 75,
+      "range": 90,
+      "abilitypoints": 100,
+      "rarity": 100,
+      "colorhex": "#0099ff"
+    },
+    {
+      "name": "Freyja",
+      "description": "Goddess of love and beauty.",
+      "attack": 80,
+      "defence": 90,
+      "speed": 70,
+      "range": 75,
+      "abilitypoints": 85,
+      "rarity": 95,
+      "colorhex": "#b402cc"
+    },
+    {
+      "name": "Loki",
+      "description": "The trickster god.",
+      "attack": 95,
+      "defence": 70,
+      "speed": 80,
+      "range": 60,
+      "abilitypoints": 80,
+      "rarity": 90,
+      "colorhex": "#00b30c"
+    },
+    {
+      "name": "Thor",
+      "description": "God of thunder.",
+      "attack": 85,
+      "defence": 80,
+      "speed": 70,
+      "range": 90,
+      "abilitypoints": 85,
+      "rarity": 90,
+      "colorhex": "#FFFF00"
+    },
+    {
+      "name": "Hel",
+      "description": "Queen of the dead.",
+      "attack": 80,
+      "defence": 85,
+      "speed": 65,
+      "range": 80,
+      "abilitypoints": 90,
+      "rarity": 90,
+      "colorhex": "#000000"
+    },
+    {
+      "name": "Fenrir",
+      "description": "The wolf of Ragnarok.",
+      "attack": 75,
+      "defence": 70,
+      "speed": 60,
+      "range": 40,
+      "abilitypoints": 80,
+      "rarity": 85,
+      "colorhex": "#00ad00"
+    },
+    {
+      "name": "Jormungandr",
+      "description": "The world serpent.",
+      "attack": 85,
+      "defence": 70,
+      "speed": 65,
+      "range": 30,
+      "abilitypoints": 50,
+      "rarity": 80,
+      "colorhex": "#782600"
+    },
+    {
+      "name": "Vali",
+      "description": "The son of Odin.",
+      "attack": 70,
+      "defence": 60,
+      "speed": 90,
+      "range": 80,
+      "abilitypoints": 55,
+      "rarity": 75,
+      "colorhex": "#ff6600"
+    },
+    {
+      "name": "Surt",
+      "description": "The fire giant.",
+      "attack": 80,
+      "defence": 70,
+      "speed": 75,
+      "range": 60,
+      "abilitypoints": 60,
+      "rarity": 70,
+      "colorhex": "#ff3333"
+    },
+    {
+      "name": "Ymir",
+      "description": "The first giant.",
+      "attack": 80,
+      "defence": 60,
+      "speed": 70,
+      "range": 30,
+      "abilitypoints": 60,
+      "rarity": 65,
+      "colorhex": "#ff0000"
+    }
+  ]
+}
