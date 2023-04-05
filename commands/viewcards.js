@@ -16,6 +16,13 @@ module.exports = {
       return;
     }
 
+    if (userProfile.cards.length === 0) {
+      await interaction.reply(
+        'You currently have no cards. Use the /getcard command to obtain your first card.'
+      );
+      return;
+    }
+
     const cardsPerPage = 12;
     const pageCount = Math.ceil(userProfile.cards.length / cardsPerPage);
 

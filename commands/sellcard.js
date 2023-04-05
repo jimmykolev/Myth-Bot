@@ -30,11 +30,27 @@ module.exports = {
       return;
     }
 
+    let goldToAdd;
+        if (card.rarity === 100) {
+          goldToAdd = 1000;
+        } else if (card.rarity > 94) {
+          goldToAdd = 500;
+        } else if (card.rarity > 84) {
+          goldToAdd = 250;
+        } else if (card.rarity > 74) {
+          goldToAdd = 100;
+        } else {
+          goldToAdd = 50;
+        }
+
     const cardIndex = userProfile.cards.indexOf(card);
-    const confirmPrompt = await interaction.reply({
-      content: `Are you sure you want to sell a **${cardName}** card?`,
+    await interaction.reply({
+      content: `Are you sure you want to sell a **${cardName}** card for ${goldToAdd} :coin:?`,
       components: [this.getButtonRow()],
+      fetchReply: true,
     });
+
+    const confirmPrompt = await interaction.fetchReply();
 
     const filter = (interaction) => interaction.isButton() && interaction.user.id === userProfile.userId;
     const collector = confirmPrompt.createMessageComponentCollector({ filter, time: 15000 });
@@ -45,18 +61,7 @@ module.exports = {
       if (interaction.customId === 'yes') {
         userProfile.cards.splice(cardIndex, 1);
 
-        let goldToAdd;
-        if (card.rarity === 100) {
-          goldToAdd = 1000;
-        } else if (card.rarity > 94) {
-          goldToAdd = 500;
-        } else if (card.rarity > 87) {
-          goldToAdd = 250;
-        } else if (card.rarity > 80) {
-          goldToAdd = 100;
-        } else {
-          goldToAdd = 50;
-        }
+        
 
         userProfile.gold += goldToAdd;
         await userProfile.save().catch((err) => console.log(err));

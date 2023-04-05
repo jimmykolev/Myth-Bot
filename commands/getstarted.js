@@ -16,7 +16,7 @@ module.exports = {
              gold: 0
             });
             await userProfile.save().catch(err => console.log(err));
-            await interaction.reply(`You have been set up to collect cards! ${userProfile.userId}`);
+            await interaction.reply(`You have been set up to collect cards!`);
             console.log(userProfile);
     } else {
             await interaction.reply('You are already set up to collect cards! Use **/getcard** to get a card or **/balance** to view your balance.');
