@@ -21,9 +21,14 @@ For the current version's capabilities see the Current Version section.
 - Use /getcard to get a random card or gold if they already have the card.
 - Use /balance to check their balance.
 - Use /viewcards to view their cards.
+- Use /sellcard to get a card for gold.
+- Use /battle to battle against the bot.
 
 ## Planned Features
 ### Planned Features for Users:
-- Use /sellcard to sell a card for gold.
-- Use /battle <user> to battle another user.
-- More to come!
+- Money making commands like blackjack and coin flip
+- Shop to buy artifacts from Mythologies
+- Inventory to view your artifacts
+- View stats of cards using /checkcard
+- Battling another user
+- AI generated artwork for cards
