@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Pandora's Box",
+            "price": 100000
+        },
+        {
+            "id": 2,
+            "name": "The Golden Fleece",
+            "price": 50000
+        },
+        {
+            "id": 3,
+            "name": "Staff of Hermes",
+            "price": 25000
+        },
+        {
+          "id": 4,
+          "name": "The Sword of Damocles",
+          "price": 10000
+        }
+    ]
+}

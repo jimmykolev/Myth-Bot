@@ -35,7 +35,6 @@ module.exports = {
 
     const validAttributes = [
         'attack',
-        'defense',
         'defence',
         'speed',
         'range',
@@ -45,7 +44,7 @@ module.exports = {
       var attributeName = interaction.options.getString('attribute').toLowerCase();
       if (!validAttributes.includes(attributeName)) {
         await interaction.reply(
-          `Invalid attribute: **${capitalizeFirstLetter(attributeName)}**. Please choose a valid attribute (Attack, Defense/Defence, Speed, Range, AP).`
+          `Invalid attribute: **${capitalizeFirstLetter(attributeName)}**. Please choose a valid attribute (Attack, Defence, Speed, Range, AP).`
         );
         return;
       }
