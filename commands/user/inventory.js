@@ -1,47 +1,47 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ButtonInteraction } = require('discord.js');
-const User = require('../schemas/user.js');
+const User = require('../../schemas/user.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('viewcards')
-    .setDescription('View all the cards you have.'),
+    .setName('inventory')
+    .setDescription('View the items you have.'),
 
   async execute(interaction) {
     const userProfile = await User.findOne({ userId: interaction.user.id });
     if (!userProfile) {
       await interaction.reply(
-        'You are not set up to collect cards. Please run /getstarted to set up your profile.'
+        'You are not set up to collect cards or items. Please run /getstarted to set up your profile.'
       );
       return;
     }
 
-    if (userProfile.cards.length === 0) {
+    if (userProfile.items.length === 0) {
       await interaction.reply(
-        'You currently have no cards. Use the /getcard command to obtain your first card.'
+        'You currently have no items. Use the /shop command to buy some items.'
       );
       return;
     }
 
-    const cardsPerPage = 12;
-    const pageCount = Math.ceil(userProfile.cards.length / cardsPerPage);
+    const itemsPerPage = 12;
+    const pageCount = Math.ceil(userProfile.items.length / itemsPerPage);
 
-    const cardFields = userProfile.cards.map((card) => ({
-      name: card.name,
-      value: `Rarity: ${card.rarity}`,
+    const itemFields = userProfile.items.map((item) => ({
+      name: item.name,
+      value: `${item.description}`,
       inline: true,
     }));
 
     const embeds = [];
     for (let i = 0; i < pageCount; i++) {
-      const startIndex = i * cardsPerPage;
-      const endIndex = startIndex + cardsPerPage;
+      const startIndex = i * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
 
       const embed = {
-        title: `${interaction.user.username}'s Cards`,
+        title: `${interaction.user.username}'s Inventory`,
         description: `Page ${i + 1} of ${pageCount}`,
-        fields: cardFields.slice(startIndex, endIndex),
-        footer: { text: `You have ${userProfile.cards.length} cards.`},
+        fields: itemFields.slice(startIndex, endIndex),
+        footer: { text: `You have ${userProfile.items.length} artifacts.`},
         color: 0x5eafff,
         thumbnail: { url: interaction.user.avatarURL() },
       };

@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const User = require('../schemas/user.js');
+const User = require('../../schemas/user.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 module.exports = {

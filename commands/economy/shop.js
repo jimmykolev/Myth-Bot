@@ -6,8 +6,8 @@ const {
   ActionRowBuilder,
   ButtonInteraction,
 } = require("discord.js");
-const User = require("../schemas/user.js");
-const items = require("../items.json");
+const User = require("../../schemas/user.js");
+const items = require("../../items.json");
 
 module.exports = {
   data: new SlashCommandBuilder()

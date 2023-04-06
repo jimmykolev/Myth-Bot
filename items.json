@@ -23,6 +23,55 @@
           "name": "The Sword of Damocles",
           "description": "The sword that belonged to Damocles",
           "price": 10000
+        },
+        {
+            "id": 5,
+            "name": "The Golden Apple",
+            "description": "The apple that belonged to Aphrodite",
+            "price": 5000
+        },
+        {
+            "id": 6,
+            "name": "Aegis",
+            "description": "The shield that belonged to Zeus",
+            "price": 55000
+        },
+        {
+            "id": 7,
+            "name": "The Argo",
+            "description": "The ship that belonged to Jason",
+            "price": 45000
+        },
+        {
+            "id": 8,
+            "name": "The cornucopia",
+            "description": "The horn that belonged to Zeus",
+            "price": 35000
+        },
+        {
+            "id": 9,
+            "name": "Dainsleif",
+            "description": "The sword that belonged to Odin",
+            "price": 55000
+        },
+        {
+            "id": 10,
+            "name": "The Spear of Destiny",
+            "description": "The spear that belonged to Odin",
+            "price": 45000
+        }, 
+        {
+            "id": 11,
+            "name": "Gleipnir",
+            "description": "Thin as a silken ribbon, yet stronger than any iron chain",
+            "price": 35000
+        },
+        {
+            "id": 12,
+            "name": "Mjolnir",
+            "description": "The hammer that belonged to Thor",
+            "price": 75000
         }
+
     ]
 }

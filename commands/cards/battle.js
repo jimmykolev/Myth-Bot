@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
-const User = require('../schemas/user.js');
+const User = require('../../schemas/user.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { mythology } = require("../creatures.json");
+const { mythology } = require("../../creatures.json");
 
 module.exports = {
   data: new SlashCommandBuilder()
