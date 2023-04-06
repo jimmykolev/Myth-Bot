@@ -118,7 +118,7 @@ module.exports = {
             )
             .setColor(`${randomCreature.colorhex}`);
 
-          await interaction.reply({ embeds: [card] });
+          await interaction.reply({ content: `You got a ${randomCreature.name}!`,embeds: [card] });
         }
       }
     }
