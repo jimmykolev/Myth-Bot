@@ -23,12 +23,15 @@ For the current version's capabilities see the Current Version section.
 - Use /viewcards to view their cards.
 - Use /sellcard to get a card for gold.
 - Use /battle to battle against the bot.
+- Use /shop to buy artifacts
 
 ## Planned Features
 ### Planned Features for Users:
 - Money making commands like blackjack and coin flip
-- Shop to buy artifacts from Mythologies
 - Inventory to view your artifacts
 - View stats of cards using /checkcard
 - Battling another user
 - AI generated artwork for cards
+
+## Purpose
+The reason I started working on this bot is to revive an old project I didn't have the capabilities to create at the time, the repo still exists on my github, The Chelsea Bot. I wanted to create a trading card game bot as a passion project, nothing too complex here but just something I wanted to create for a while. Additionally with some simple Node.js, JavaScript and Discord.js knowledge, anyone can change the code and create their own similar bot with any topic. This bot provides the commands needed for a system to exist.
