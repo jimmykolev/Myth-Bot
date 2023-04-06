@@ -24,11 +24,11 @@ For the current version's capabilities see the Current Version section.
 - Use /sellcard to get a card for gold.
 - Use /battle to battle against the bot.
 - Use /shop to buy artifacts
+- Use /inventory to view your artifacts
 
 ## Planned Features
 ### Planned Features for Users:
 - Money making commands like blackjack and coin flip
-- Inventory to view your artifacts
 - View stats of cards using /checkcard
 - Battling another user
 - AI generated artwork for cards
