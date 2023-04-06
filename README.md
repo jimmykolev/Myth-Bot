@@ -25,6 +25,8 @@ For the current version's capabilities see the Current Version section.
 - Use /battle to battle against the bot.
 - Use /shop to buy artifacts
 - Use /inventory to view your artifacts
+- Use /profile to view your profile or another user's profile
+- Use /profilecolour to personalize the colour of profile
 
 ## Planned Features
 ### Planned Features for Users:
