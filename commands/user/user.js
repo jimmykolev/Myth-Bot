@@ -4,7 +4,7 @@ const { EmbedBuilder } = require("discord.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('profile')
+    .setName('user')
     .setDescription('View your user profile or another user\'s profile.')
     .addUserOption((option) =>
         option
