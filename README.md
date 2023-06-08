@@ -1,7 +1,8 @@
 # Myth-Bot
 - A trading card game bot for Discord built in Discord.js 
 - Author: Jimmy Kolev
-- Version: 1.0.0
+- Version: 1.1.0
+- Trading Update (Users can trade between themselves by offering cards for gold!)
 ## Description
 Myth-Bot is a trading card game bot for Discord. It is built in Discord.js and uses MongoDB for data storage. It is currently in development and is not yet ready for use. To keep up to date with the development of Myth-Bot, look at the GitHub repository.
 
@@ -27,13 +28,15 @@ For the current version's capabilities see the Current Version section.
 - Use /inventory to view your artifacts
 - Use /profile to view your profile or another user's profile
 - Use /profilecolour to personalize the colour of profile
+- Use /offergold to send another user a trade offer with coins
+- Use /requests to toggle your trade requests on/off
+- Use /stats to see the stats of specific cards
 
 ## Planned Features
 ### Planned Features for Users:
 - Money making commands like blackjack and coin flip
-- View stats of cards using /checkcard
 - Battling another user
-- AI generated artwork for cards
+- Trading Cards for Cards and Items for Items
 
 ## Purpose
 The reason I started working on this bot is to revive an old project I didn't have the capabilities to create at the time, the repo still exists on my github, The Chelsea Bot. I wanted to create a trading card game bot as a passion project, nothing too complex here but just something I wanted to create for a while. Additionally with some simple Node.js, JavaScript and Discord.js knowledge, anyone can change the code and create their own similar bot with any topic. This bot provides the commands needed for a system to exist.
