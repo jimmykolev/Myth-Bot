@@ -4,19 +4,21 @@
             "id": 1,
             "name": "Pandora's Box",
             "description": "The box that contained all the evils of the world",
-            "price": 100000
+            "price": 15000
+           
         },
         {
             "id": 2,
             "name": "The Golden Fleece",
             "description": "The fleece that belonged to Jason",
-            "price": 50000
+            "price": 10000
+            
         },
         {
             "id": 3,
             "name": "Staff of Hermes",
             "description": "The staff that belonged to Hermes",
-            "price": 25000
+            "price": 12000
         },
         {
           "id": 4,
@@ -28,49 +30,73 @@
             "id": 5,
             "name": "The Golden Apple",
             "description": "The apple that belonged to Aphrodite",
-            "price": 5000
+            "price": 2500
         },
         {
             "id": 6,
             "name": "Aegis",
             "description": "The shield that belonged to Zeus",
-            "price": 55000
+            "price": 5000
         },
         {
             "id": 7,
             "name": "The Argo",
             "description": "The ship that belonged to Jason",
-            "price": 45000
+            "price": 4500
         },
         {
             "id": 8,
             "name": "The cornucopia",
             "description": "The horn that belonged to Zeus",
-            "price": 35000
+            "price": 3500
         },
         {
             "id": 9,
             "name": "Dainsleif",
             "description": "The sword that belonged to Odin",
-            "price": 55000
+            "price": 5500
         },
         {
             "id": 10,
             "name": "The Spear of Destiny",
             "description": "The spear that belonged to Odin",
-            "price": 45000
+            "price": 4500
         }, 
         {
             "id": 11,
             "name": "Gleipnir",
             "description": "Thin as a silken ribbon, yet stronger than any iron chain",
-            "price": 35000
+            "price": 3500
         },
         {
             "id": 12,
             "name": "Mjolnir",
             "description": "The hammer that belonged to Thor",
-            "price": 75000
+            "price": 7500
+        },
+        {
+            "id": 13,
+            "name": "The Gjallarhorn",
+            "description": "The horn that belonged to Heimdall",
+            "price": 3500
+        },
+        {
+            "id": 14,
+            "name": "The Gungnir",
+            "description": "The spear that belonged to Odin",
+            "price": 4500
+        },
+        {
+            "id": 15,
+            "name": "The Draupnir",
+            "description": "The ring that belonged to Odin",
+            "price": 3500
+        },
+        {
+            "id": 16,
+            "name": "The Holy Grail",
+            "description": "The cup that belonged to Jesus",
+            "price": 50000
         }
 
     ]

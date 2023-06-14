@@ -9,11 +9,27 @@ module.exports = {
     .setDescription("Get a card from the database"),
   async execute(interaction) {
     const userProfile = await User.findOne({ userId: interaction.user.id });
+    
     if (!userProfile) {
       await interaction.reply(
         "You are not set up to collect cards. Please run /getstarted to set up your profile."
       );
-    } else {
+    } 
+    const isAdmin = userProfile.admin;
+    if (!isAdmin) {
+      const cardCooldownExpiration = userProfile.cooldowns.get("card");
+      if (cardCooldownExpiration && cardCooldownExpiration > new Date()) {
+        const remainingCooldown = Math.ceil(
+          (cardCooldownExpiration - new Date()) / 1000 / 60
+        );
+        interaction.reply(
+          `You are still under cooldown for this command. Please wait ${remainingCooldown} minutes.`
+        );
+        return;
+      }
+    }
+    
+    
       const randomValue = Math.random();
 
       const rarityTiers = [
@@ -118,9 +134,21 @@ module.exports = {
             )
             .setColor(`${randomCreature.colorhex}`);
 
-          await interaction.reply({ content: `You got a ${randomCreature.name}!`,embeds: [card] });
+          
+          const cooldownDurationMinutes = 30; // Set the desired cooldown duration in minutes
+          const newCardCooldownExpiration = new Date(
+            Date.now() + cooldownDurationMinutes * 60 * 1000
+          );
+          userProfile.cooldowns.set("card", newCardCooldownExpiration);
+
+          // Save the updated user data to the database
+          await userProfile.save();
+    
+          await interaction.reply({
+            content: `You got a ${randomCreature.name}!`,
+            embeds: [card],
+          });
         }
       }
     }
-  },
-};
+  };

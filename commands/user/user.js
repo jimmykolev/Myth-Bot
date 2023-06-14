@@ -35,6 +35,11 @@ module.exports = {
         .addFields({
             name: ":coin:",
             value: `${userProfile.gold}`,
+            inline: true,
+        },
+        {
+            name: "Trading",
+            value: `${userProfile.trading ? 'On' : 'Off'}`,
             inline: false,
         },
         {

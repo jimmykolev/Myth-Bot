@@ -1,7 +1,7 @@
 const { REST, Routes } = require("discord.js");
 const { clientId, token } = require("./config.json");
 
-const commandNameToRemove = "ping"; // Replace with the name of the command you want to remove
+const commandNameToRemove = "requests"; // Replace with the name of the command you want to remove
 
 const rest = new REST({ version: "10" }).setToken(token);
 
