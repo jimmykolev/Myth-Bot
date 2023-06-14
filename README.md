@@ -3,6 +3,7 @@
 - Author: Jimmy Kolev
 - Version: 1.1.0
 - Trading Update (Users can trade between themselves by offering gold for cards!)
+- Selling overhaul, sell items for market value and cards based on rarity
 ## Description
 Myth-Bot is a trading card game bot for Discord. It is built in Discord.js and uses MongoDB for data storage. It is currently in development and is not yet ready for use. To keep up to date with the development of Myth-Bot, look at the GitHub repository.
 
@@ -22,7 +23,7 @@ For the current version's capabilities see the Current Version section.
 - Use /getcard to get a random card or gold if they already have the card.
 - Use /balance to check their balance.
 - Use /viewcards to view their cards.
-- Use /sellcard to get a card for gold.
+- Use /sell to get a card or item for gold.
 - Use /battle to battle against the bot.
 - Use /shop to buy artifacts
 - Use /inventory to view your artifacts
